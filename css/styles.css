@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --ai-background: rgb(57, 57, 61);
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -65,34 +66,84 @@
 }
 /* A.I Camp Team Code */
 
-.parallax {
-  background-image: url("../assets/img/yugioh-duel-monsters-5d-1366x768.jpg");
-  min-height: 95vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  overflow-x: hidden;
 }
 
-.parallax_text {
+.txtover {
+  position: relative;
+  margin: 0;
+}
+
+.txtover img {
+  width: 100%;
+  height: 100vh;
+}
+
+.txtover figcaption .home_header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  text-shadow: .3rem .4rem .7rem black;
+}
+
+.txtover figcaption .home_subheader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
+  padding: 0;
   color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: .3rem;
+  text-shadow: .3rem .4rem .7rem black;
 }
 
 .home_body {
-  background-color: var(--bs-dark);
+  background-color: var(--ai-background);
 }
 
 .companies {
-  background-color: var(--bs-dark);
-
+  background-color: var(--ai-background);
+  margin-top: 4rem;
+  margin-bottom: 7rem;
 }
 
+#company_logo {
+  height: 70px;
+}
+
+
+.what_is {
+  background-color: var(--bs-dark);
+  color: white;
+}
+
+.home_title {
+  font-size: 3.0rem;
+  font-weight: 300;
+  letter-spacing: .25rem;
+  text-align: center;
+  padding-top: 10rem;
+  text-shadow: .3rem .4rem .7rem black;
+}
+
+.home_paragraph {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding-top: 3rem;
+}
 /* A.I Camp Team Code End */
 
 *,
