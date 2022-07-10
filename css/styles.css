@@ -75,16 +75,22 @@
 }
 
 .parallax_text {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
   text-align: center;
   color: white;
 }
 
 .home_body {
-  color: var(--bs-dark);
+  background-color: var(--bs-dark);
+}
+
+.companies {
+  background-color: var(--bs-dark);
+
 }
 
 /* A.I Camp Team Code End */
