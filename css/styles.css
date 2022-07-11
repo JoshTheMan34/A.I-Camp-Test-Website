@@ -73,16 +73,14 @@ body {
 .txtover {
   position: relative;
   margin: 0;
-}
-
-.txtover img {
-  width: 100%;
-  height: 100vh;
+  padding: 0;
+  height: 96vh;
 }
 
 .txtover video {
+  margin-top: -34px;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -116,15 +114,8 @@ body {
 
 
 .home_body {
-  background-color: var(--ai-background);
+  background-color: #1e1e1e;
 }
-
-.companies {
-  background-color: var(--ai-background);
-  margin-top: 4rem;
-  margin-bottom: 7rem;
-}
-
 
 /* Not Used */
 
@@ -137,8 +128,8 @@ body {
 
 .companies_slider {
   background-color: var(--ai-background);
-  margin-top: 4rem;
-  margin-bottom: 5.5rem;
+  padding-top: 5.5rem;
+  padding-bottom: 4rem;
 }
 
 
@@ -270,7 +261,7 @@ body {
 
 
 .cards {
-  background-color: var(--bs-dark);
+  background-color: #1e1e1e;
   padding-left: 0;
   padding-right: 0;
   padding-top: 8rem;
@@ -654,7 +645,6 @@ body {
   position: relative;
 }
 
-.demo,
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,16 +665,6 @@ body {
   z-index: 1;
   -webkit-transform: translate3d(0.1px, 0.1px, 0.1px);
           transform: translate3d(0.1px, 0.1px, 0.1px);
-}
-
-.demo {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -717,8 +697,14 @@ body {
 
 
 .what_is {
-  background-color: var(--bs-dark);
+  background-color: #1e1e1e;
   color: white;
+}
+
+.what_is_video{
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .home_title {

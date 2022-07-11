@@ -15,6 +15,22 @@
 
 
 
+
+
+
+
+                                          class="py-4"
+
+
+
+
+
+
+
+
+
+
+
                     <section class="yu-gi-oh_cards">
                         <div class="container">
                             <div class="row">
