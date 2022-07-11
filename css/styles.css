@@ -274,19 +274,19 @@ body {
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
-  --back: url(/assets/img/yu-gi-oh_back.webp);
+  --back: url(../assets/img/yu-gi-oh_back.webp);
   --charizard1: #fac;
   --charizard2: #ddccaa;
-  --charizardfront: url(/assets/img/yu-gi-oh_crystal_beast_sapphire_pegasus.jpg);
+  --charizardfront: url(../assets/img/yu-gi-oh_crystal_beast_sapphire_pegasus.jpg);
   --pika1: #54a29e;
   --pika2: #a79d66;
-  --pikafront: url(/assets/img/yu-gi-oh_genex_controller.jpg);
+  --pikafront: url(../assets/img/yu-gi-oh_genex_controller.jpg);
   --eevee1: #efb2fb;
   --eevee2: #acc6f8;
-  --eeveefront: url(/assets/img/yu-gi-oh_lowblow.jpg);
+  --eeveefront: url(../assets/img/yu-gi-oh_lowblow.jpg);
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(/assets/img/yu-gi-oh_metalfoes_orichalc.jpg);
+  --mewtwofront: url(../assets/img/yu-gi-oh_metalfoes_orichalc.jpg);
 }
 
 .card {
