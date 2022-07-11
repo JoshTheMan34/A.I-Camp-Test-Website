@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta property="og:title" content="Yu-Gi-Oh Card Generator">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://joshtheman34.github.io/A.I-Camp-Test-Website/" />
+        <meta property="og:description" content="Andrew is an NLP (Natural Language Processing) artificial intelligence that uses data from real Yu-Gi-Oh cards to take the 
+        user input of a name and attribute to return a description with stats of a unique A.I-generated monster.">
+        <meta property="og:image" content="https://ibb.co/71JP5dB">
+        <title>Yu-Gi-Oh Card Generator</title>
+        <link rel="icon" href="assets/img/aicamplogo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    <body class="sb-nav-fixed teams_body">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Home</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            -->
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">IDK</a></li>
+                        <li><a class="dropdown-item" href="#!">TEXT</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">figure this out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Content</div>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Card Generator
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Card Battle
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Other</div>
+                            <a class="nav-link" href="howitworks.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                How it works
+                            </a>
+                            <a class="nav-link" href="teams.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                The Team
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small"></div>
+                    </div>
+                </nav>
+            </div>
+            <!--Navbar End-->
+
+            <div id="layoutSidenav_content">
+                <main>
+
+                    <div class="bs-dark2">
+                        <div class="container py-5">
+                          <div class="row h-100 align-items-center py-5">
+                            <div class="col-lg-6">
+                              <h1 class="display-4">About us page</h1>
+                              <p class="lead text-muted mb-0">Create a minimal about us page using Bootstrap 4.</p>
+                              <p class="lead text-muted">Snippet by <a href="https://bootstrapious.com/snippets" class="text-muted"> 
+                                          <u>Bootstrapious</u></a>
+                              </p>
+                            </div>
+                            <div class="col-lg-6 d-none d-lg-block"><img src="assets/img/Team meeting_Isometric.png" alt="" class="img-fluid"></div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="bs-dark3 py-5">
+                        <div class="container py-5">
+                          <div class="row align-items-center mb-5">
+                            <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                              <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
+                              <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+                            </div>
+                            <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="assets/img/Coding _Outline.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+                          </div>
+                          <div class="row align-items-center">
+                            <div class="col-lg-5 px-5 mx-auto"><img src="assets/img/Online presentation_Monochromatic.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+                            <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+                              <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
+                              <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#" class="btn btn-light px-5 rounded-pill shadow-sm">Learn More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="bs-dark2 py-5">
+                        <div class="container py-5">
+                          <div class="row mb-4">
+                            <div class="col-lg-5">
+                              <h2 class="display-4 font-weight-light">Our team</h2>
+                              <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+
+                          <!-- Team -->
+
+                  <section id="team" class="pb-5 teams_section">
+                        <div class="row">
+                            <!-- Team member -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="image-flip" >
+                                    <div class="mainflip flip-0">
+                                        <div class="frontside">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                                    <h4 class="card-title">Sunlimetech</h4>
+                                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="backside">
+                                            <div class="card">
+                                                <div class="card-body text-center mt-4">
+                                                    <h4 class="card-title">Sunlimetech</h4>
+                                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                              <i class="fa-brands fa-github"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                              <i class="fa-brands fa-instagram"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                              <i class="fa-brands fa-battle-net"></i>                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                              <i class="fa-brands fa-discord"></i>                                                            
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Team member -->
+                            <!-- Team member -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                              <div class="image-flip" >
+                                  <div class="mainflip flip-0">
+                                      <div class="frontside">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="backside">
+                                          <div class="card">
+                                              <div class="card-body text-center mt-4">
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-github"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-steam"></i>                                                      
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-discord"></i>                                                            
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ./Team member -->
+                            <!-- Team member -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                              <div class="image-flip" >
+                                  <div class="mainflip flip-0">
+                                      <div class="frontside">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="backside">
+                                          <div class="card">
+                                              <div class="card-body text-center mt-4">
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-github"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-steam"></i>                                                      
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-discord"></i>                                                            
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ./Team member -->
+                            <!-- Team member -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                              <div class="image-flip" >
+                                  <div class="mainflip flip-0">
+                                      <div class="frontside">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="backside">
+                                          <div class="card">
+                                              <div class="card-body text-center mt-4">
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-github"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-steam"></i>                                                      
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-discord"></i>                                                            
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ./Team member -->
+                            <!-- Team member -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                              <div class="image-flip" >
+                                  <div class="mainflip flip-0">
+                                      <div class="frontside">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="backside">
+                                          <div class="card">
+                                              <div class="card-body text-center mt-4">
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-github"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-steam"></i>                                                      
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-discord"></i>                                                            
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ./Team member -->
+                            <!-- Team member -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                              <div class="image-flip" >
+                                  <div class="mainflip flip-0">
+                                      <div class="frontside">
+                                          <div class="card">
+                                              <div class="card-body text-center">
+                                                  <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="backside">
+                                          <div class="card">
+                                              <div class="card-body text-center mt-4">
+                                                  <h4 class="card-title">Sunlimetech</h4>
+                                                  <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-github"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                          </a>
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-steam"></i>                                                      
+                                                      </li>
+                                                      <li class="list-inline-item">
+                                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                            <i class="fa-brands fa-discord"></i>                                                            
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ./Team member -->
+
+                        </div>
+                  </section>
+                  <!-- Team -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </main>
+
+                <footer class="py-4 bg-dark mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
