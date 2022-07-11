@@ -1,0 +1,172 @@
+                    <section class="home_image">
+                        <figure class="txtover">
+                            <img src="assets/img/yugioh-duel-monsters-5d-1366x768.jpg"  alt="Home Background">
+                            <figcaption class="py-4">
+                                  <p class="home_header">Andrew</h1>
+                                  <p class="home_subheader">The Yu-Gi-Oh card generating A.I</p>
+                            </figcaption>
+                          </figure>
+                    </section>
+
+
+
+
+
+
+
+
+                    <section class="yu-gi-oh_cards">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="cards-container">
+                                        <a class="card">
+                                          <div class="side front" style="background-image:url('assets/img/yu-gi-oh_lowblow.jpg')"></div>
+                                          <div class="side back"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cards-container">
+                                        <a class="card">
+                                          <div class="side front" style="background-image:url('')"></div>
+                                          <div class="side back"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cards-container">
+                                        <a class="card">
+                                          <div class="side front" style="background-image:url('')"></div>
+                                          <div class="side back"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cards-container">
+                                        <a class="card">
+                                          <div class="side front" style="background-image:url('')"></div>
+                                          <div class="side back"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+.yu-gi-oh_cards {
+    perspective:10px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    background-color: var(--bs-dark);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+.cards-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  align-items:top;
+  padding:30px 100px;
+  filter:drop-shadow(10px 10px 2px black);
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: calc(1.4 * 100px);
+  -webkit-animation: float 1.3s ease-in-out infinite;
+          animation: float 1.3s ease-in-out infinite;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  margin: 10px 5px;
+
+}
+
+
+
+.card .side {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: 3%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card .front {
+  background-color: #17316a;
+}
+
+@-webkit-keyframes float {
+  0% {
+    top: -5px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: -5px;
+  }
+}
+
+@keyframes float {
+  0% {
+    top: -5px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: -5px;
+  }
+}
+
+
+
+
+
+
+
+var refreshCards = function() {
+    $('.cards-container').empty();
+    $('.input-wrapper').addClass('loading');
+    
+    var searchString = $('input[name="pokemon-name"]').val();
+    $.get('https://api.pokemontcg.io/v1/cards?name=' + encodeURI(searchString), function(result) {
+      $('.input-wrapper').removeClass('loading');
+      
+      for(var i = 0; i < result['cards'].length; i++) {
+        var card = result['cards'][i];
+        var cardElement = $(
+          '<a class="card flipped">' +
+            '<div class="side front" style="background-image:url(\'' + card['imageUrl'] + '\')"></div>' +
+            '<div class="side back"></div>' +
+          '</a>')
+        $('.cards-container').append(cardElement);
+        
+        setTimeout((function(){
+          $(this).removeClass('flipped');
+        }).bind(cardElement), 100 * i);
+      }
+    });
+  }
+  
+  var refreshTimeout;
+  $('input[name="pokemon-name"]').keydown(function(){
+    clearTimeout(refreshTimeout);
+    refreshTimeout = setTimeout(refreshCards, 500);
+  });
