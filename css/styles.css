@@ -90,21 +90,26 @@ body {
 
 .txtover figcaption .home_header {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 7%;
+  left: 25%;
   transform: translate(-50%, -50%);
   padding: 0;
-  color: white;
-  text-align: center;
-  font-size: 4.5rem;
-  font-weight: 400;
-  letter-spacing: .3rem;
-  text-shadow: .3rem .4rem .7rem black;
+  color: rgb(204, 193, 193);
+  font-size: 18vw;
+  overflow: hidden;
+  letter-spacing: -0.0vw;
+  padding-right: 2.3vw;
+  font-family: 'Cinzel', serif;
+  text-transform: capitalize;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 5vh;
+  }
 }
 
 .txtover figcaption .home_subheader {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
@@ -113,7 +118,13 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: .3rem;
+  overflow: hidden;
   text-shadow: .3rem .4rem .7rem black;
+  padding-right: 2.3vw;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 5vh;
+  }
 }
 
 
@@ -601,6 +612,11 @@ section .section-title {
 
 
 
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
 
 
 
